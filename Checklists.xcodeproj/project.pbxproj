@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C10F6C9D16B666AD005BBCCF /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C10F6C9C16B666AD005BBCCF /* ItemDetailViewController.m */; };
 		C1174A9A16B4C1D700460AF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1174A9916B4C1D700460AF2 /* UIKit.framework */; };
 		C1174A9C16B4C1D700460AF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1174A9B16B4C1D700460AF2 /* Foundation.framework */; };
 		C1174A9E16B4C1D700460AF2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1174A9D16B4C1D700460AF2 /* CoreGraphics.framework */; };
@@ -17,10 +18,15 @@
 		C1174AAE16B4C1D700460AF2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1174AAD16B4C1D700460AF2 /* Default@2x.png */; };
 		C1174AB016B4C1D700460AF2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1174AAF16B4C1D700460AF2 /* Default-568h@2x.png */; };
 		C1174AB316B4C1D700460AF2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1174AB116B4C1D700460AF2 /* MainStoryboard.storyboard */; };
-		C1174AB616B4C1D700460AF2 /* ChecklistsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1174AB516B4C1D700460AF2 /* ChecklistsViewController.m */; };
+		C1174AB616B4C1D700460AF2 /* ChecklistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1174AB516B4C1D700460AF2 /* ChecklistViewController.m */; };
+		C1174ABE16B6427200460AF2 /* ChecklistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C1174ABD16B6427200460AF2 /* ChecklistItem.m */; };
+		C1A0F06D16BBACCB00880FD8 /* AllListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A0F06C16BBACCB00880FD8 /* AllListsViewController.m */; };
+		C1A0F07016BCFFB100880FD8 /* Checklist.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A0F06F16BCFFB100880FD8 /* Checklist.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C10F6C9B16B666AD005BBCCF /* ItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetailViewController.h; sourceTree = "<group>"; };
+		C10F6C9C16B666AD005BBCCF /* ItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailViewController.m; sourceTree = "<group>"; };
 		C1174A9516B4C1D700460AF2 /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1174A9916B4C1D700460AF2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C1174A9B16B4C1D700460AF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -35,8 +41,14 @@
 		C1174AAD16B4C1D700460AF2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		C1174AAF16B4C1D700460AF2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C1174AB216B4C1D700460AF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		C1174AB416B4C1D700460AF2 /* ChecklistsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChecklistsViewController.h; sourceTree = "<group>"; };
-		C1174AB516B4C1D700460AF2 /* ChecklistsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChecklistsViewController.m; sourceTree = "<group>"; };
+		C1174AB416B4C1D700460AF2 /* ChecklistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChecklistViewController.h; sourceTree = "<group>"; };
+		C1174AB516B4C1D700460AF2 /* ChecklistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChecklistViewController.m; sourceTree = "<group>"; };
+		C1174ABC16B6427200460AF2 /* ChecklistItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChecklistItem.h; sourceTree = "<group>"; };
+		C1174ABD16B6427200460AF2 /* ChecklistItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChecklistItem.m; sourceTree = "<group>"; };
+		C1A0F06B16BBACCB00880FD8 /* AllListsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllListsViewController.h; sourceTree = "<group>"; };
+		C1A0F06C16BBACCB00880FD8 /* AllListsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllListsViewController.m; sourceTree = "<group>"; };
+		C1A0F06E16BCFFB100880FD8 /* Checklist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Checklist.h; sourceTree = "<group>"; };
+		C1A0F06F16BCFFB100880FD8 /* Checklist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Checklist.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,12 @@
 		C1174A8A16B4C1D700460AF2 = {
 			isa = PBXGroup;
 			children = (
+				C1A0F06E16BCFFB100880FD8 /* Checklist.h */,
+				C1A0F06F16BCFFB100880FD8 /* Checklist.m */,
+				C1A0F06B16BBACCB00880FD8 /* AllListsViewController.h */,
+				C1A0F06C16BBACCB00880FD8 /* AllListsViewController.m */,
+				C10F6C9B16B666AD005BBCCF /* ItemDetailViewController.h */,
+				C10F6C9C16B666AD005BBCCF /* ItemDetailViewController.m */,
 				C1174A9F16B4C1D700460AF2 /* Checklists */,
 				C1174A9816B4C1D700460AF2 /* Frameworks */,
 				C1174A9616B4C1D700460AF2 /* Products */,
@@ -86,9 +104,11 @@
 				C1174AA816B4C1D700460AF2 /* ChecklistsAppDelegate.h */,
 				C1174AA916B4C1D700460AF2 /* ChecklistsAppDelegate.m */,
 				C1174AB116B4C1D700460AF2 /* MainStoryboard.storyboard */,
-				C1174AB416B4C1D700460AF2 /* ChecklistsViewController.h */,
-				C1174AB516B4C1D700460AF2 /* ChecklistsViewController.m */,
+				C1174AB416B4C1D700460AF2 /* ChecklistViewController.h */,
+				C1174AB516B4C1D700460AF2 /* ChecklistViewController.m */,
 				C1174AA016B4C1D700460AF2 /* Supporting Files */,
+				C1174ABC16B6427200460AF2 /* ChecklistItem.h */,
+				C1174ABD16B6427200460AF2 /* ChecklistItem.m */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -176,7 +196,11 @@
 			files = (
 				C1174AA616B4C1D700460AF2 /* main.m in Sources */,
 				C1174AAA16B4C1D700460AF2 /* ChecklistsAppDelegate.m in Sources */,
-				C1174AB616B4C1D700460AF2 /* ChecklistsViewController.m in Sources */,
+				C1174AB616B4C1D700460AF2 /* ChecklistViewController.m in Sources */,
+				C1174ABE16B6427200460AF2 /* ChecklistItem.m in Sources */,
+				C10F6C9D16B666AD005BBCCF /* ItemDetailViewController.m in Sources */,
+				C1A0F06D16BBACCB00880FD8 /* AllListsViewController.m in Sources */,
+				C1A0F07016BCFFB100880FD8 /* Checklist.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +282,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Checklists/Checklists-Prefix.pch";
 				INFOPLIST_FILE = "Checklists/Checklists-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -269,6 +294,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Checklists/Checklists-Prefix.pch";
 				INFOPLIST_FILE = "Checklists/Checklists-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -293,6 +319,7 @@
 				C1174ABB16B4C1D700460AF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

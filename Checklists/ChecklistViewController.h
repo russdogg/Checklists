@@ -15,6 +15,5 @@
 
 @property (nonatomic, strong) Checklist *checklist;
 
--(IBAction)addItem;
-
 @end
+

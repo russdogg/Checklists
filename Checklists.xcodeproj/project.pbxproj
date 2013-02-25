@@ -15,12 +15,10 @@
 		C1174AA416B4C1D700460AF2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C1174AA216B4C1D700460AF2 /* InfoPlist.strings */; };
 		C1174AA616B4C1D700460AF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1174AA516B4C1D700460AF2 /* main.m */; };
 		C1174AAA16B4C1D700460AF2 /* ChecklistsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1174AA916B4C1D700460AF2 /* ChecklistsAppDelegate.m */; };
-		C1174AAC16B4C1D700460AF2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C1174AAB16B4C1D700460AF2 /* Default.png */; };
-		C1174AAE16B4C1D700460AF2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1174AAD16B4C1D700460AF2 /* Default@2x.png */; };
-		C1174AB016B4C1D700460AF2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1174AAF16B4C1D700460AF2 /* Default-568h@2x.png */; };
 		C1174AB316B4C1D700460AF2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1174AB116B4C1D700460AF2 /* MainStoryboard.storyboard */; };
 		C1174AB616B4C1D700460AF2 /* ChecklistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1174AB516B4C1D700460AF2 /* ChecklistViewController.m */; };
 		C1174ABE16B6427200460AF2 /* ChecklistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C1174ABD16B6427200460AF2 /* ChecklistItem.m */; };
+		C18E9C4C16DB3C6900B14ACA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C18E9C4B16DB3C6900B14ACA /* Default-568h@2x.png */; };
 		C19CA5B716D60BD4004D0F11 /* Appointments.png in Resources */ = {isa = PBXBuildFile; fileRef = C19CA5A316D60BD4004D0F11 /* Appointments.png */; };
 		C19CA5B816D60BD4004D0F11 /* Appointments@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C19CA5A416D60BD4004D0F11 /* Appointments@2x.png */; };
 		C19CA5B916D60BD4004D0F11 /* Birthdays.png in Resources */ = {isa = PBXBuildFile; fileRef = C19CA5A516D60BD4004D0F11 /* Birthdays.png */; };
@@ -44,7 +42,17 @@
 		C19CA5CD16D60E31004D0F11 /* IconPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19CA5CC16D60E31004D0F11 /* IconPickerViewController.m */; };
 		C1A0F06D16BBACCB00880FD8 /* AllListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A0F06C16BBACCB00880FD8 /* AllListsViewController.m */; };
 		C1A0F07016BCFFB100880FD8 /* Checklist.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A0F06F16BCFFB100880FD8 /* Checklist.m */; };
+		C1A39B0616D86F4B0051AE4A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C1A39B0416D86F4B0051AE4A /* Default.png */; };
+		C1A39B0716D86F4B0051AE4A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1A39B0516D86F4B0051AE4A /* Default@2x.png */; };
 		C1AA394E16CCD257000D556F /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AA394D16CCD257000D556F /* DataModel.m */; };
+		C1DF6AC816D8682A00540C94 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = C1DF6ABE16D8682A00540C94 /* Icon-72.png */; };
+		C1DF6AC916D8682A00540C94 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1DF6ABF16D8682A00540C94 /* Icon-72@2x.png */; };
+		C1DF6ACA16D8682A00540C94 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = C1DF6AC016D8682A00540C94 /* Icon-Small-50.png */; };
+		C1DF6ACB16D8682A00540C94 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1DF6AC116D8682A00540C94 /* Icon-Small-50@2x.png */; };
+		C1DF6ACC16D8682A00540C94 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = C1DF6AC216D8682A00540C94 /* Icon-Small.png */; };
+		C1DF6ACD16D8682A00540C94 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1DF6AC316D8682A00540C94 /* Icon-Small@2x.png */; };
+		C1DF6ACE16D8682A00540C94 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C1DF6AC416D8682A00540C94 /* Icon.png */; };
+		C1DF6ACF16D8682A00540C94 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1DF6AC516D8682A00540C94 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,14 +70,12 @@
 		C1174AA716B4C1D700460AF2 /* Checklists-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Checklists-Prefix.pch"; sourceTree = "<group>"; };
 		C1174AA816B4C1D700460AF2 /* ChecklistsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChecklistsAppDelegate.h; sourceTree = "<group>"; };
 		C1174AA916B4C1D700460AF2 /* ChecklistsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChecklistsAppDelegate.m; sourceTree = "<group>"; };
-		C1174AAB16B4C1D700460AF2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		C1174AAD16B4C1D700460AF2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		C1174AAF16B4C1D700460AF2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C1174AB216B4C1D700460AF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		C1174AB416B4C1D700460AF2 /* ChecklistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChecklistViewController.h; sourceTree = "<group>"; };
 		C1174AB516B4C1D700460AF2 /* ChecklistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChecklistViewController.m; sourceTree = "<group>"; };
 		C1174ABC16B6427200460AF2 /* ChecklistItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChecklistItem.h; sourceTree = "<group>"; };
 		C1174ABD16B6427200460AF2 /* ChecklistItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChecklistItem.m; sourceTree = "<group>"; };
+		C18E9C4B16DB3C6900B14ACA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../Default-568h@2x.png"; sourceTree = "<group>"; };
 		C19CA5A316D60BD4004D0F11 /* Appointments.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Appointments.png; sourceTree = "<group>"; };
 		C19CA5A416D60BD4004D0F11 /* Appointments@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Appointments@2x.png"; sourceTree = "<group>"; };
 		C19CA5A516D60BD4004D0F11 /* Birthdays.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Birthdays.png; sourceTree = "<group>"; };
@@ -96,8 +102,18 @@
 		C1A0F06C16BBACCB00880FD8 /* AllListsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllListsViewController.m; path = ../AllListsViewController.m; sourceTree = "<group>"; };
 		C1A0F06E16BCFFB100880FD8 /* Checklist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Checklist.h; path = ../Checklist.h; sourceTree = "<group>"; };
 		C1A0F06F16BCFFB100880FD8 /* Checklist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Checklist.m; path = ../Checklist.m; sourceTree = "<group>"; };
+		C1A39B0416D86F4B0051AE4A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../../Default.png; sourceTree = "<group>"; };
+		C1A39B0516D86F4B0051AE4A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../../Default@2x.png"; sourceTree = "<group>"; };
 		C1AA394C16CCD257000D556F /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataModel.h; path = ../DataModel.h; sourceTree = "<group>"; };
 		C1AA394D16CCD257000D556F /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataModel.m; path = ../DataModel.m; sourceTree = "<group>"; };
+		C1DF6ABE16D8682A00540C94 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		C1DF6ABF16D8682A00540C94 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		C1DF6AC016D8682A00540C94 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		C1DF6AC116D8682A00540C94 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		C1DF6AC216D8682A00540C94 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		C1DF6AC316D8682A00540C94 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		C1DF6AC416D8682A00540C94 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		C1DF6AC516D8682A00540C94 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +160,7 @@
 		C1174A9F16B4C1D700460AF2 /* Checklists */ = {
 			isa = PBXGroup;
 			children = (
+				C1DF6ABB16D8682A00540C94 /* images */,
 				C19CA5CB16D60E31004D0F11 /* IconPickerViewController.h */,
 				C19CA5CC16D60E31004D0F11 /* IconPickerViewController.m */,
 				C1AA394C16CCD257000D556F /* DataModel.h */,
@@ -176,9 +193,6 @@
 				C1174AA216B4C1D700460AF2 /* InfoPlist.strings */,
 				C1174AA516B4C1D700460AF2 /* main.m */,
 				C1174AA716B4C1D700460AF2 /* Checklists-Prefix.pch */,
-				C1174AAB16B4C1D700460AF2 /* Default.png */,
-				C1174AAD16B4C1D700460AF2 /* Default@2x.png */,
-				C1174AAF16B4C1D700460AF2 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -209,6 +223,24 @@
 			);
 			name = "Checklist Icons";
 			path = "../Checklist Icons";
+			sourceTree = "<group>";
+		};
+		C1DF6ABB16D8682A00540C94 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C18E9C4B16DB3C6900B14ACA /* Default-568h@2x.png */,
+				C1A39B0416D86F4B0051AE4A /* Default.png */,
+				C1A39B0516D86F4B0051AE4A /* Default@2x.png */,
+				C1DF6ABE16D8682A00540C94 /* Icon-72.png */,
+				C1DF6ABF16D8682A00540C94 /* Icon-72@2x.png */,
+				C1DF6AC016D8682A00540C94 /* Icon-Small-50.png */,
+				C1DF6AC116D8682A00540C94 /* Icon-Small-50@2x.png */,
+				C1DF6AC216D8682A00540C94 /* Icon-Small.png */,
+				C1DF6AC316D8682A00540C94 /* Icon-Small@2x.png */,
+				C1DF6AC416D8682A00540C94 /* Icon.png */,
+				C1DF6AC516D8682A00540C94 /* Icon@2x.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,9 +296,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1174AA416B4C1D700460AF2 /* InfoPlist.strings in Resources */,
-				C1174AAC16B4C1D700460AF2 /* Default.png in Resources */,
-				C1174AAE16B4C1D700460AF2 /* Default@2x.png in Resources */,
-				C1174AB016B4C1D700460AF2 /* Default-568h@2x.png in Resources */,
 				C1174AB316B4C1D700460AF2 /* MainStoryboard.storyboard in Resources */,
 				C19CA5B716D60BD4004D0F11 /* Appointments.png in Resources */,
 				C19CA5B816D60BD4004D0F11 /* Appointments@2x.png in Resources */,
@@ -288,6 +317,17 @@
 				C19CA5C816D60BD4004D0F11 /* Photos@2x.png in Resources */,
 				C19CA5C916D60BD4004D0F11 /* Trips.png in Resources */,
 				C19CA5CA16D60BD4004D0F11 /* Trips@2x.png in Resources */,
+				C1DF6AC816D8682A00540C94 /* Icon-72.png in Resources */,
+				C1DF6AC916D8682A00540C94 /* Icon-72@2x.png in Resources */,
+				C1DF6ACA16D8682A00540C94 /* Icon-Small-50.png in Resources */,
+				C1DF6ACB16D8682A00540C94 /* Icon-Small-50@2x.png in Resources */,
+				C1DF6ACC16D8682A00540C94 /* Icon-Small.png in Resources */,
+				C1DF6ACD16D8682A00540C94 /* Icon-Small@2x.png in Resources */,
+				C1DF6ACE16D8682A00540C94 /* Icon.png in Resources */,
+				C1DF6ACF16D8682A00540C94 /* Icon@2x.png in Resources */,
+				C1A39B0616D86F4B0051AE4A /* Default.png in Resources */,
+				C1A39B0716D86F4B0051AE4A /* Default@2x.png in Resources */,
+				C18E9C4C16DB3C6900B14ACA /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,6 +16,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    NSDate *date = [NSDate dateWithTimeIntervalSinceNow:10];
+    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+    
+    localNotification.fireDate = date;
+    localNotification.timeZone = [NSTimeZone defaultTimeZone];
+    localNotification.alertBody = @"I am a local notification.";
+    localNotification.soundName = UILocalNotificationDefaultSoundName;
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification: localNotification];
+    
     return YES;
 }
 
@@ -25,6 +36,10 @@
 	// Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
 
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    NSLog(@"didReceiveLocalNotification %@", notification);
+}
 - (void)saveData
 {
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;

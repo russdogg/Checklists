@@ -23,6 +23,8 @@
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *doneBarButton;
 @property (nonatomic, weak) id <ItemDetailViewControllerDelegate> delegate;
 @property (nonatomic, strong) ChecklistItem *itemToEdit;
+@property (nonatomic, strong) IBOutlet UISwitch *switchControl;
+@property (nonatomic, strong) IBOutlet UILabel *dueDateLabel;
 
 - (IBAction)cancel;
 - (IBAction)done;

@@ -14,6 +14,9 @@
 @end
 
 @implementation ItemDetailViewController
+{
+    NSDate *dueDate;
+}
 
 @synthesize textField;
 @synthesize doneBarButton;
@@ -29,15 +32,33 @@
     return self;
 }
 
+-(void)updateDueDateLabel
+{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateStyle:NSDateFormatterMediumStyle];
+    [formatter setTimeStyle:NSDateFormatterShortStyle];
+    self.dueDateLabel.text = [formatter stringFromDate:dueDate];
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    if (self.itemToEdit != nil) {
+    if (self.itemToEdit != nil)
+    {
         self.title = @"Edit Item";
         self.textField.text = self.itemToEdit.text;
         self.doneBarButton.enabled = YES;
+        self.switchControl.on = self.itemToEdit.shouldRemind;
+        dueDate = self.itemToEdit.dueDate;
 	}
+    else
+    {
+        self.switchControl.on = NO;
+        dueDate = [NSDate date];
+    }
+    [self updateDueDateLabel];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -59,14 +80,21 @@
 
 - (IBAction)done
 {
-    if (self.itemToEdit == nil) {
+    if (self.itemToEdit == nil)
+    {
         ChecklistItem *item = [[ChecklistItem alloc] init];
         item.text = self.textField.text;
         item.checked = NO;
+        item.shouldRemind = self.switchControl.on;
+        item.dueDate = dueDate;
         
         [self.delegate itemDetailViewController:self didFinishAddingItem:item];
-    } else {
+    }
+    else
+    {
         self.itemToEdit.text = self.textField.text;
+        self.itemToEdit.shouldRemind = self.switchControl.on;
+        self.itemToEdit.dueDate = dueDate;
         [self.delegate itemDetailViewController:self didFinishEditingItem:self.itemToEdit];
     }
 }

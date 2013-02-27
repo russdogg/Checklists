@@ -22,6 +22,8 @@
 @synthesize doneBarButton;
 @synthesize delegate;
 @synthesize itemToEdit;
+@synthesize switchControl;
+@synthesize dueDateLabel;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -30,6 +32,16 @@
         // Custom initialization
     }
     return self;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"PickDate"])
+    {
+        DatePickerViewController *controller = segue.destinationViewController;
+        controller.delegate = self;
+        controller.date = dueDate;
+    }
 }
 
 -(void)updateDueDateLabel
@@ -101,7 +113,14 @@
 
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return nil;
+    if (indexPath.row == 2)
+    {
+        return indexPath;
+    }
+    else
+    {
+        return nil;
+    }
 }
 
 - (BOOL)textField:(UITextField *)theTextField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
@@ -109,6 +128,18 @@
     NSString *newText = [theTextField.text stringByReplacingCharactersInRange:range withString:string];
     self.doneBarButton.enabled = ([newText length] > 0);
     return YES;
+}
+
+- (void)datePickerDidCancel:(DatePickerViewController *)picker
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)datePicker:(DatePickerViewController *)picker didPickDate:(NSDate *)date
+{
+    dueDate = date;
+    [self updateDueDateLabel];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

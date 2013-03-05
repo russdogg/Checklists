@@ -183,10 +183,10 @@
 				C18E9C4E16DC91F800B14ACA /* DatePickerViewController.m */,
 				C1174AB416B4C1D700460AF2 /* ChecklistViewController.h */,
 				C1174AB516B4C1D700460AF2 /* ChecklistViewController.m */,
-				C19CA5A216D60BD4004D0F11 /* Checklist Icons */,
-				C1174AA016B4C1D700460AF2 /* Supporting Files */,
 				C1174ABC16B6427200460AF2 /* ChecklistItem.h */,
 				C1174ABD16B6427200460AF2 /* ChecklistItem.m */,
+				C19CA5A216D60BD4004D0F11 /* Checklist Icons */,
+				C1174AA016B4C1D700460AF2 /* Supporting Files */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";

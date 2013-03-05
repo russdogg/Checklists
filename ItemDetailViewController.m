@@ -94,20 +94,19 @@
 {
     if (self.itemToEdit == nil)
     {
-        ChecklistItem *item = [[ChecklistItem alloc] init];
-        item.text = self.textField.text;
+        ChecklistItem *item = [[ChecklistItem alloc] init]; item.text = self.textField.text;
         item.checked = NO;
-        item.shouldRemind = self.switchControl.on;
-        item.dueDate = dueDate;
         
+        item.shouldRemind = self.switchControl.on; item.dueDate = dueDate;
+        [item scheduleNotification];
         [self.delegate itemDetailViewController:self didFinishAddingItem:item];
     }
     else
     {
         self.itemToEdit.text = self.textField.text;
-        self.itemToEdit.shouldRemind = self.switchControl.on;
-        self.itemToEdit.dueDate = dueDate;
-        [self.delegate itemDetailViewController:self didFinishEditingItem:self.itemToEdit];
+        self.itemToEdit.shouldRemind = self.switchControl.on; self.itemToEdit.dueDate = dueDate;
+        [self.itemToEdit scheduleNotification];
+        [self.delegate itemDetailViewController:self didFinishEditingItem:self. itemToEdit];
     }
 }
 
